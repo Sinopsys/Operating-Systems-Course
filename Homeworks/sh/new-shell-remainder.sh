@@ -12,18 +12,19 @@ argv[6]=$6
 argv[7]=$7
 
 _help () {
-    echo "Usage: new-shell-reminder [OPTION]* [VALUE]..."
-    echo "	-c Set a command to execute in \$VALUE sec (default - echo wake up!)"
-    echo "	-m Set a message to show in \$VALUE sec (default - \"wake up!\")"
-    echo "	-t Set timer for this amount of sec (default - 5s)" 
+    echo "Usage: new-shell-reminder.sh [OPTION] [VALUE]..."
+    echo "	-c Set a command to (default - echo wake up!)"
+    echo "	-m Set a message to (default - \"Wake up!\")"
+    echo "	-t Set timer for this amount of 's/m/h/d' (default - 5s)" 
     echo "	--beep Beep on notification (default - false)" 
     echo "	-h Help"
     exit 0
 }
 
+    
 init_vars () {
-    r_time=5
-    message="Wake up!"
+    r_time="5s"
+    message="Wake-up!"
     cmd="echo wake up!"
     i=1
     beep=false
@@ -49,9 +50,13 @@ init_vars () {
 }
 
 init_vars
-sleep ${r_time}s
-if [ mes_flag ]; then notify-send -t 10000 $message; fi;
-if [ cmd_flag ]; then $cmd; fi;
-if [ $beep ]; then echo beep; fi;
+
+sleep ${r_time}
+
+if $mes_flag; then notify-send -t 10000 $message; fi
+if $cmd_flag; then $cmd; fi
+if $beep; then echo beep; fi
+
 # EOF
+
 
