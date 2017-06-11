@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kirill/University/HSE/OS/Operating-Systems-Course/Homeworks/ls_c/directory.c
+stdlib.h
+-
+stdio.h
+-
+dirent.h
+-
+string.h
+-
+sys/stat.h
+-
+grp.h
+-
+pwd.h
+-
+time.h
+-
+zconf.h
+-
+
+/home/kirill/University/HSE/OS/Operating-Systems-Course/Homeworks/ls_c/directory.h
+
+/home/kirill/University/HSE/OS/Operating-Systems-Course/Homeworks/ls_c/main.c
+stdlib.h
+-
+stdio.h
+-
+directory.h
+/home/kirill/University/HSE/OS/Operating-Systems-Course/Homeworks/ls_c/directory.h
+

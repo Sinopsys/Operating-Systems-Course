@@ -1,0 +1,3 @@
+/home/kirill/University/HSE/OS/Operating-Systems-Course/Homeworks/ls_c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kirill/University/HSE/OS/Operating-Systems-Course/Homeworks/ls_c/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kirill/University/HSE/OS/Operating-Systems-Course/Homeworks/ls_c/cmake-build-debug/CMakeFiles/ls_c.dir

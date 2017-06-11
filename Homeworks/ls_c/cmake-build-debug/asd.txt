@@ -1,0 +1,8 @@
+-rw-rw-r-- 1 kirill kirill    33142 May 31 13:44 CMakeCache.txt
+drwxrwxr-x 5 kirill kirill     4096 Jun  5 09:09 CMakeFiles
+-rw-rw-r-- 1 kirill kirill     5791 May 31 15:13 Makefile
+-rw-rw-r-- 1 kirill kirill        0 Jun  5 09:12 asd.txt
+-rw-rw-r-- 1 kirill kirill     1474 May 31 13:44 cmake_install.cmake
+-rwxrwxr-x 1 kirill kirill    20664 Jun  5 09:09 ls_c
+-rw-rw-r-- 1 kirill kirill     6879 May 31 15:13 ls_c.cbp
+lrwxrwxrwx 1 kirill kirill       10 May 31 19:49 mylink -> ./Makefile

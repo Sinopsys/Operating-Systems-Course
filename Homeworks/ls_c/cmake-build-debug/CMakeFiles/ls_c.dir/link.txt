@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/ls_c.dir/main.c.o CMakeFiles/ls_c.dir/directory.c.o  -o ls_c 
