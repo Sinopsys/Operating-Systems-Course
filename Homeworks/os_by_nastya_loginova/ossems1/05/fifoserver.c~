@@ -1,0 +1,32 @@
+#include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <sys/typed.h>
+#include <string.h>
+
+#define MAX_BUF 1024
+
+int main(void)
+
+puts ("Server - listening");
+
+int code = mkfifo("demo_fifo", 0666);
+
+int fd = open("demo_fifo", O_RDONLY);
+
+puts("FIFO OPEN");
+
+char stringBuffer [256];
+memset(stringBuffer, 0, 256);
+
+
+
+    read(fd, buf, MAX_BUF);
+    printf("Received: %s\n", buf);
+    close(fd);
+
+    return 0;
+}
+

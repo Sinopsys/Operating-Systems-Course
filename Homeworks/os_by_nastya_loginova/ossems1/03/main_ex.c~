@@ -1,0 +1,17 @@
+# include "stdio.h"
+
+
+
+
+main (int argc, char *argv[], char *envp[])
+
+{
+
+while (*argv)
+printf("argc = %d, argv = %s, envp = %s\n", argc, *argv++, envp[1]);
+
+
+return 0;
+}
+
+
